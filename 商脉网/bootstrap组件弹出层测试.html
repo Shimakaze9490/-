@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="js/bootstrap-3.3.6-dist/css/bootstrap.css"/>
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js" ></script>
+		<script type="text/javascript" src="js/bootstrap-3.3.6-dist/js/bootstrap.js" ></script>
+	</head>
+	<body>
+		
+		<!--首先需要一个按钮，-->
+		<button type="button" class="btn btn-primary " data-toggle="modal" data-target="#myModal">
+		  Launch demo modal
+		</button>
+		
+		<!--配套使用,添加ID-->
+		<div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title">感谢您的应聘，请填写您的讯息:</h4>
+		      </div>
+		      <div class="modal-body">
+		        <p>您的姓名:</p>
+		        <p><input class="usname form-control" type="text" name="username" id="username" value="" /></p>
+		        <p>您的手机:</p>
+		        <p><input class="ustel form-control" type="text" name="ustel" id="ustel" value="" /></p>
+		        <p>
+		        	<span >您的性别:</span>
+		        	<label class="ussex radio-inline" for="">
+		        		<input class="ussex" type="radio" name="ussex" id="username1" value="man" />男
+		        	</label>
+		        	<label class="ussex radio-inline" for="">
+		        		<input class="ussex" type="radio" name="ussex" id="username2" value="woman" />女
+		        	</label>
+		        </p>
+		        <p>您的邮箱:</p>
+		        <p><input class="usname form-control" type="text" name="username" id="username" value="" /></p>
+		        <p>您的工作经历:</p>
+		        <textarea name="exp" rows="3" style="width: 100%;"></textarea>
+		        <p>您的工作特长:</p>
+		        <textarea name="skill" rows="2" style="width: 100%;"></textarea>
+		        <p>您的个人简历:</p>
+		        <textarea name="resume" rows="3" style="width: 100%;"></textarea>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+		        <button type="button" class="btn btn-primary">跳转</button>
+		      </div>
+		    </div><!-- /.modal-content -->
+		  </div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+		
+	</body>
+</html>

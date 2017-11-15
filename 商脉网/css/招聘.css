@@ -1,0 +1,99 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.box {
+  width: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.box .top {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  z-index: 1000;
+}
+.box .top .navbar {
+  margin-bottom: 0px;
+  background-color: #ffffff;
+  /*.navbar-default*/
+}
+.box .top .navbar .navbar-brand img {
+  margin-top: -12px;
+}
+.box .banner {
+  padding-left: 0px;
+  padding-right: 0px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  /*margin-top: 20px;*/
+  z-index: 10;
+}
+.box .banner img {
+  width: 100%;
+  height: auto;
+}
+.box .main .about .title {
+  width: auto;
+  float: left;
+  margin-bottom: 20px;
+}
+.box .main .about .title > img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.box .main .about .title > p {
+  font-size: 2rem;
+}
+.box .main .about .counttxt {
+  clear: both;
+  width: 100%;
+}
+.box .main .about .counttxt .lefta {
+  height: 100%;
+  border-right: solid 2px #CCCCCC;
+}
+.box .main .about .counttxt .lefta > ul > li {
+  padding-left: 18px;
+  height: 80px;
+  line-height: 18px;
+  width: 80%;
+  padding-top: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s linear;
+}
+.box .main .about .counttxt .lefta > ul > li:hover {
+  background-color: #337AB7;
+  color: #FFFFFF;
+}
+.box .main .about .counttxt .lefta > ul > li > p {
+  font-size: 1.1rem;
+}
+.box .main .about .counttxt .lefta > ul > li > p:nth-child(1) {
+  font-size: 1.7rem;
+}
+.box .main .about .counttxt .lefta > ul .liz {
+  list-style: none;
+  color: #337AB7;
+}
+.box .main .about .counttxt .righta {
+  height: 100%;
+  padding-left: 30px;
+}
+.box .main .about .counttxt .righta .count1 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+.box .main .about .counttxt .righta .count1 > p:nth-child(2) {
+  font-size: 1.1rem;
+}
+.box .main .about .counttxt .righta .count2 .title1 {
+  font-size: 1.7rem;
+  font-family: "宋体";
+}
+.box .main .about .counttxt .righta .count2 .countss {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}

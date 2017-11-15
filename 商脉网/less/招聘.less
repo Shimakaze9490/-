@@ -1,0 +1,200 @@
+@charset:"UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+//声明：变量和通用混合 standard
+@widthx:100px;
+@zero:0px;
+//边框
+.st_border(@border:red){
+    border: solid 1px @border;
+}
+//宽度
+.st_width(@width:100%){
+    width: @width;
+}
+//高度
+.st_height(@height:auto){
+    height: @height;
+}
+//背景
+.st_background(@background:deepskyblue){
+    background-color: @background;
+}
+//位置
+.st_position(@position:relative){
+    position:@position;
+}
+//z-index
+.st_z-index(@z-index:1){
+    z-index: @z-index;
+}
+//字体颜色
+.st_color(@color:gray){
+    color: gray;
+}
+
+//正式开始css样式
+//hover测试&:hover
+
+.box{
+    //box本身内容
+//  .st_border();
+    .st_width();
+//  .st_height(300px);
+    
+    //覆盖bs插件效果
+    padding-left: @zero;
+    padding-right: @zero;
+    
+    
+    
+    
+    //全局类container,等
+    .container-fluid{
+//      .st_border();
+    }
+    
+    
+    //top
+    .top{
+        .st_width();
+        .st_height(50px);
+        .st_position(fixed);
+        .st_z-index(1000);
+        
+        .navbar{
+            margin-bottom: 0px;
+            .st_background(#FFFFFF);/*.navbar-default*/
+            
+            .navbar-brand{
+                img{
+                    //logo
+                    margin-top: -12px;
+                }
+            }
+        }
+    }
+    
+    //banner
+    .banner{
+        //覆盖bs插件效果
+        padding-left: @zero;
+        padding-right: @zero;
+        //banner控制大小
+        .st_height(200px);
+        overflow: hidden;
+        
+        .st_position(relative);
+        /*margin-top: 20px;*/
+        .st_z-index(10);
+        
+        //img
+        img{
+            .st_width();
+            .st_height(auto);
+        }
+    }
+    
+    //main
+    .main{
+        
+        .about{
+            //重新设置高度
+//          padding-left: 0px;
+//          padding-right: 0px;
+//          .st_height(600px);不能固定高度
+            
+            .title{
+                width: auto;
+                float:left;
+                margin-bottom: 20px;
+                >img{
+                    width: 100%;
+                    margin-bottom: 10px;
+                }
+                >p{
+                    font-size: 2rem;
+                }
+                
+            }
+            
+            .counttxt{
+                clear: both;
+                width: 100%;
+//              height: 450px;
+                    
+                .lefta{
+                    height: 100%;
+//                  width: 200px;不能设置固定宽度
+                    border-right: solid 2px #CCCCCC;
+                    >ul{
+//                      padding-left: 24px;
+                        >li{
+                            padding-left: 18px;
+                            height: 80px;
+                            line-height: 18px;
+//                          text-indent: 24px;
+//                          width: 190px;不能设置固定宽度
+                            width: 80%;
+                            padding-top: 10px;
+                            cursor: pointer;
+                            border-radius: 4px;
+                            transition: background-color 0.3s linear;
+                            &:hover{
+                                background-color: #337AB7;
+                                color: #FFFFFF;
+                            }
+                            >p{
+                                font-size: 1.1rem;
+                            }
+                            >p:nth-child(1){
+                                font-size: 1.7rem;
+                            }
+                        }
+                        
+                        .liz{
+                            list-style: none;
+                            color: #337AB7;
+                            
+                        }
+                    }
+                }
+                
+                .righta{
+                    height: 100%;
+//                  padding-top: 30px;
+                    padding-left: 30px;
+                    
+                    .count1{
+                        font-size: 1.8rem;
+                        margin-bottom: 20px;
+                        >p:nth-child(2){
+                            font-size: 1.1rem;
+                        }
+                    }
+                    
+                    .count2{
+                        .title1{
+                            font-size: 1.7rem;
+                            font-family: "宋体";
+                        }
+                        .countss{
+                            margin-top: 30px;
+                            margin-bottom: 20px;
+                        }
+                    }
+                }
+            }
+        }
+        
+        
+    }
+    
+    
+    
+    
+}

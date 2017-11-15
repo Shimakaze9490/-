@@ -1,0 +1,177 @@
+.box{
+    .main{
+       
+        //关于我们,加一个 news
+        .about,.news{
+            
+            .title{
+                width: auto;
+                float:left;
+                >img{
+                    width: 100%;
+                    margin-bottom: 10px;
+                }
+                >p{
+                    font-size: 2rem;
+                }
+            }
+            
+            .counttxt{
+                line-height: 24px;
+                margin-top: 90px;
+//              border: solid 1px green;
+                padding-top: 100px;
+                .counttxt1{
+                    text-indent: 26px;
+                }
+                
+                .counttxt2{
+                    a{
+                        text-decoration: none;
+                    }
+                }
+                
+                .btn_more{
+//                  color: dodgerblue;
+                }
+            }
+        }
+        
+        //商脉团队
+        .team{
+            .title{
+                float: right;
+                text-align: right;
+//              display: block; 无效
+                
+                >img{
+                    width: 100%;
+                    margin-bottom: 10px;
+                }
+                >p{
+                    font-size: 2rem;
+                }
+            }
+            
+            .photos{
+                margin-bottom: 30px;
+                margin-top: 90px;
+                .photoxx{
+                    padding: 20px;
+//                      border: solid 1px green;
+
+                    .frames{
+                        border: solid 2px lightgray;
+                        position: relative;
+                        overflow: hidden;
+                        img{
+                            width: 100%;
+                            height: auto;
+                            z-index: 1;
+                        }
+                        
+                        .layer{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            position: absolute;
+                            top: 0px;
+                            left: 0px;
+                            height: 100%;
+                            width: 100%;
+                            background: rgba(0,0,0,0);
+                            z-index: -999;
+                            transition: background-color 0.3s linear;
+                        }
+                        
+                        &:hover .layer{
+                            background: rgba(0,0,0,0.3);
+                            z-index: 2;
+                        }
+                        //待定！！
+                        &:hover .layer a{
+                            
+                        }
+                        .layer a{
+                            color: #FFFFFF;
+                            text-align: center;
+                            display: inline-block;
+                            width: 70px;
+                            height: 45px;
+                            line-height: 45px;
+                            border: solid 2px #FFFFFF;
+                            font-size: 1.6rem;
+                        }
+                    }
+                }
+            }
+            
+            //下方文字
+            .counttxt{
+                padding-left:0px ;
+                padding-right: 0px;
+                margin-left: 0px;
+                margin-right: 0px;
+                >div{
+                    display: flex;
+                    justify-content: center; //弹性布局
+                }
+                .cxbtn{
+                    border: solid 1px gray;
+                    width: 70px;
+                    text-align: center;
+                    color: #008FD7;
+                    margin-top: 10px;
+                }
+            }
+            
+            //第二组图片（复制一波
+            .photoszz{
+                img{
+                    border: solid 3px lightgray;
+                }
+                
+            }
+        }
+        
+        
+        .news{
+            .title{
+                
+            }
+            .counttxt{
+                .maincounts{
+                    .leftc{
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    
+                    .rightc{
+                        .panel{
+                            ul{
+                                list-style: none;
+                                li{
+                                    height: 60px;
+                                    line-height: 60px;
+                                    border: solid 1px red;
+                                    
+                                    .sp1{
+                                        span{
+                                            line-height: 30px;
+                                            height: 30px;
+                                            display: inline-block;
+                                        }
+                                    }
+                                    .sp2{
+                                        
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

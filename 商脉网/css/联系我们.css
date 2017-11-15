@@ -1,0 +1,75 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.box {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.box .main .contentUS {
+  padding-left: 0px ;
+  padding-right: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.box .main .contentUS > div {
+  display: flex;
+  justify-content: center;
+}
+.box .main .contentUS .titlex {
+  text-align: center;
+  font-size: 2rem;
+}
+.box .main .contentUS .titlex img {
+  margin-bottom: 20px;
+  width: 100%;
+  height: auto;
+}
+.box .main .contentUS .qrcode img {
+  width: 100px;
+  height: 100px;
+}
+.box .main .banners {
+  display: flex;
+  justify-content: center;
+}
+.box .main .gestbook h3 {
+  text-align: center;
+}
+.box .main .gestbook p {
+  font-size: 1.6rem;
+}
+.box .main .gestbook #usname,
+.box .main .gestbook #usemail {
+  height: 30px;
+  width: 80%;
+  margin-left: 40px;
+}
+.box .main .gestbook #gestbooktext {
+  width: 80%;
+  margin-left: 105px;
+}
+.box .main .gestbook .checkgestbook {
+  margin-left: 105px;
+  color: #5CB85C;
+  background-color: #FFFFFF !important;
+}
+.box .main .gestbook .checkgestbook:hover {
+  color: #FFFFFF;
+  background-color: #5CB85C !important;
+}
+@media only screen and (min-width: 100px) and (max-width: 1001px) {
+  .box .main .gestbook #usname,
+  .box .main .gestbook #usemail {
+    height: 30px;
+    width: 100%;
+    margin-left: 0px;
+  }
+  .box .main .gestbook #gestbooktext {
+    margin-left: 0px;
+    width: 100%;
+  }
+  .box .main .gestbook .checkgestbook {
+    margin-left: 0px;
+  }
+}

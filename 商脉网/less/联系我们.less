@@ -1,0 +1,137 @@
+@charset:"UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+//声明：变量和通用混合 standard
+@widthx:100px;
+@zero:0px;
+//边框
+.st_border(@border:red){
+    border: solid 1px @border;
+}
+//宽度
+.st_width(@width:100%){
+    width: @width;
+}
+//高度
+.st_height(@height:auto){
+    height: @height;
+}
+//背景
+.st_background(@background:deepskyblue){
+    background-color: @background;
+}
+//位置
+.st_position(@position:relative){
+    position:@position;
+}
+//z-index
+.st_z-index(@z-index:1){
+    z-index: @z-index;
+}
+//字体颜色
+.st_color(@color:gray){
+    color: gray;
+}
+
+//正式开始css样式
+//hover测试&:hover
+
+.box{
+    
+    //覆盖bs插件效果
+    padding-left: @zero;
+    padding-right: @zero;
+    
+    .main{
+        .contentUS{
+            padding-left:0px ;
+            padding-right: 0px;
+            margin-left: 0px;
+            margin-right: 0px;
+            >div{
+                display: flex;
+                justify-content: center; //弹性布局
+            }
+            
+            .titlex{
+                text-align: center;
+                font-size: 2rem;
+                img{
+                    margin-bottom: 20px;
+                    width: 100%;//有点不懂。。。
+                    height: auto;
+                }
+            }
+            .qrcode{
+                img{
+                    width:100px;
+                    height: 100px;
+                }
+            }
+        }
+        
+        .banners{
+            display: flex;
+            justify-content: center;
+        }
+        
+        .gestbook{
+            
+            h3{
+                text-align: center;
+            }
+            p{
+                font-size: 1.6rem;
+            }
+            #usname,#usemail{
+                height: 30px;
+                width: 80%;
+                margin-left: 40px;
+            }
+            #gestbooktext{
+                width: 80%;
+                margin-left: 105px;
+            }
+            
+            .checkgestbook{
+                margin-left: 105px;
+                color: #5CB85C;
+                background-color:#FFFFFF !important;
+                
+                &:hover{
+                    color: #FFFFFF;
+                    background-color: #5CB85C !important;
+                }
+            }
+        }
+    }
+    
+}
+
+//尝试一个媒体查询去优化
+//第一：媒体查询是覆盖，不是不用，第二媒体查询必须css的选择器的样式都完全一样
+ @media only screen and (min-width: 100px) and (max-width: 1001px) {
+     .box{
+         .main{
+             .gestbook{
+                #usname,#usemail{
+                    height: 30px;
+                    width: 100%;
+                    margin-left: 0px;
+                 }
+                #gestbooktext{
+                    margin-left: 0px;
+                    width: 100%;
+                 }
+                 
+                 .checkgestbook{
+                     margin-left: 0px;
+                 }
+             }
+         }
+     }
+ }

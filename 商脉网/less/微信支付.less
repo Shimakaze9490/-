@@ -1,0 +1,54 @@
+.main{
+//  border: solid 1px green;
+    
+    .payway{
+    margin: 0px;
+//  border: solid 1px yellow;
+    width: 100%;
+    background: #F8F8FF;
+    font-size:1.4rem;
+    >div{
+        padding-top: 20px;
+    }
+    
+    .leftpay{
+//      height: 100%;
+        border:solid 2px #CCCCCC;
+        padding-left: 10px;//无效，被覆盖了
+        .paycount{
+            h3{
+                line-height: 30px;
+                color: #39AF33;
+                font-size: 1.8rem;
+            }
+        }
+    }
+    
+    .rightpay{
+//      height: 100%;
+
+        .paycountx{
+            padding-top: 20px;
+            ul{
+                list-style: none;
+                
+                li{
+                    border-radius: 3px;
+                    height: 36px;
+                    line-height: 36px;
+                    color: #337AB7;
+                    transition: background-color   0.3s  linear;
+                    cursor: pointer;
+                    padding-left: 10px;
+                    
+                    &:hover{
+                        background: #337AB7;
+                        color: #FFFFFF;
+                    }
+                }
+            }
+        }
+    }
+}
+}
+

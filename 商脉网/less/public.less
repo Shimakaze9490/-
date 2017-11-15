@@ -1,0 +1,228 @@
+@charset:"UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+//声明：变量和通用混合 standard
+@widthx:100px;
+@zero:0px;
+//边框
+.st_border(@border:red){
+    border: solid 1px @border;
+}
+//宽度
+.st_width(@width:100%){
+    width: @width;
+}
+//高度
+.st_height(@height:auto){
+    height: @height;
+}
+//背景
+.st_background(@background:deepskyblue){
+    background-color: @background;
+}
+//位置
+.st_position(@position:relative){
+    position:@position;
+}
+//z-index
+.st_z-index(@z-index:1){
+    z-index: @z-index;
+}
+//字体颜色
+.st_color(@color:gray){
+    color: gray;
+}
+
+//正式开始css样式
+//hover测试&:hover
+
+
+
+
+
+
+.box{
+    //box本身内容
+//  .st_border();
+    .st_width();
+//  .st_height(300px);
+    
+    //覆盖bs插件效果
+    padding-left: @zero;
+    padding-right: @zero;
+    margin-left: 0px;
+    margin-right: 0px;
+    position: relative;
+    
+    
+    
+    //全局类container,等
+    .container-fluid,.container{
+//      .st_border();
+//      padding-left: 0px;
+//      padding-right: 0px;
+//      margin-left: 0px;
+//      margin-right: 0px;
+    }
+    
+    
+    
+    .rightcountx{
+        width: 100px;
+        height: 180px;
+        position: fixed;
+        background-color: #ffffff;
+        z-index: 9999;
+        top: 400px;
+        right: 0px;
+        cursor: pointer;
+        
+        .secondcount{
+            >img{
+                width: 100%;  
+                height: 130px; 
+            }
+        }
+        
+        
+        .thirdcount{
+            padding-left: 10px;
+        }
+    }
+    
+    
+    
+    //top
+    .top{
+        .st_width();
+        .st_height(50px);
+        .st_position(fixed);
+        .st_z-index(1000);
+        
+        .navbar{
+            margin-bottom: 0px;
+            .st_background(#FFFFFF);/*.navbar-default*/
+            
+            .navbar-brand{
+                img{
+                    //logo
+                    margin-top: -12px;
+                }
+            }
+        }
+    }
+    
+    //banner
+    .banner{
+        //覆盖bs插件效果
+        padding-left: @zero;
+        padding-right: @zero;
+        .st_position(relative);
+        /*margin-top: 20px;*/
+        .st_z-index(10);
+        
+        //img
+        img{
+            .st_width();
+            .st_height(auto);
+        }
+    }
+    
+    //main
+    .main{
+        margin-bottom: 20px;
+        padding-left:0px ;
+        padding-right: 0px;
+         >div{
+            min-height: 300px;
+            margin-top: 50px;
+//          border: solid 1px cornflowerblue;
+        }
+        
+    }
+    
+    
+    //footer
+    .footer{
+        //覆盖bs效果
+        padding-left: 0px;
+        padding-right: 0px;
+        .st_background(#000000);
+        .st_color(#FFFFFF);
+        font-size: 1rem;
+        min-height: 130px;
+        
+        //切记：父容器auto，子容器100% 会出问题
+        .counts{
+            
+            div{
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+            
+            .row{
+                margin-left: 0px;
+                margin-right: 0px;
+                
+                >div{
+                    
+                }
+                //左侧底部
+                .count1{
+                    margin-top: 20px;
+                    padding-left: 50px;
+                }
+                
+                //右侧底部
+                .count2{
+                    margin-top: 20px;
+                   >div{
+                       border-top: solid 1.5px #CCCCCC;
+                       padding-top: 10px;
+                       width: 70px;
+                       margin-left: 70px;
+                       float: left;
+                   }
+                }
+            }
+            
+        }
+        
+    }
+    
+}
+
+//媒体查询
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+                .box {
+                    .footer{
+                        .counts{
+                            .row{
+                                .count1{
+                                    padding-left: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+                   
+                .box {
+                    .footer{
+                        .counts{
+                            .row{
+                                .count2{
+                                    >div{
+                                        width: 70px;
+                                        margin-left: 10px;
+                                    }
+                                    
+                                }
+                            }
+                        }
+                    }
+                }   
+}

@@ -1,0 +1,32 @@
+.bg {
+  background: white;
+}
+#bs-example-navbar-collapse-1 {
+  background: white;
+}
+.navbar-brand {
+  width: 200px;
+}
+.navbar-brand img {
+  margin-top: -10px;
+}
+@media only screen and (max-width: 270px) {
+  .navbar-brand {
+    width: 180px;
+  }
+}
+.navbar-default {
+  margin: 0px;
+}
+.banner {
+  margin: 0px;
+}
+.banner img {
+  height: 540px;
+  width: 100%;
+}
+@media only screen and (min-width: 100px) and (max-width: 640px) {
+  .banner {
+    display: none;
+  }
+}

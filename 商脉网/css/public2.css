@@ -1,0 +1,117 @@
+.container-fluid{
+	border: solid 1px #CCC;
+}
+/*padding-right: 15px;
+  padding-left: 15px;*/
+ 
+.box{
+	/*覆盖bs插件效果*/
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.box .banner{
+	/*覆盖bs插件效果*/
+	padding-left: 0px;
+	padding-right: 0px;
+	position: relative;
+	/*margin-top: 20px;*/
+	z-index: 10;
+}
+
+
+
+
+.box .banner img{
+	height: 100%;
+	width: 100%;
+}
+
+.navbar-brand img{
+	margin-top: -12px;
+}
+
+.top{
+	/*display: none;*/
+	width: 100%;
+	position: fixed;
+	z-index: 99;
+	height: 50px; /*只要给高度，不论多少都可以*/
+	/*border: solid 1px green;*/
+}
+	
+.navbar{
+	border: solid 1px red;
+	margin-bottom: 0px; /*解决问题*/
+}
+
+.navbar-default{
+	background-color: #FFFFFF;
+}
+
+
+
+
+.box .footer{
+	/*覆盖bs插件效果*/
+	padding-left: 0px;
+	padding-right: 0px;
+	height: 160px;
+	background-color: #000000;
+	color: #FFFFFF;
+}
+
+.box .footer .counts{
+	/*border: solid 3px red;*/
+	height: 100%;
+}
+
+
+/*暂时*/
+.box .footer .counts>div{
+	float: left;
+	height: 70%;
+	margin-left: 110px;
+	border-top: solid 1px #FFFFFF;
+	
+	width: 100px;
+	margin-top: 30px;
+	padding-top: 10px;
+	
+}
+.box .footer .counts::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.box .footer .counts .count1{
+	border-top: none;
+	margin-top: 0px;
+	height: 100%;
+	padding-top: 0px;
+	width: 500px;
+	margin-left: 0px;
+}
+
+.box .footer .counts .count1 img{
+	/*height:50px;*/
+	margin-top: 30px;
+}
+
+
+
+
+.main{
+	min-height: 1200px;
+	border: solid 1px red;
+}
+
+
+
+/*
+ * 代码混乱不堪！冗余不堪，响应式布局烂得一逼
+ * 布局请用栅格系统
+ * 
+ */
+
+

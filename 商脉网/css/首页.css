@@ -1,0 +1,119 @@
+.box .main .about .title,
+.box .main .news .title {
+  width: auto;
+  float: left;
+}
+.box .main .about .title > img,
+.box .main .news .title > img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.box .main .about .title > p,
+.box .main .news .title > p {
+  font-size: 2rem;
+}
+.box .main .about .counttxt,
+.box .main .news .counttxt {
+  line-height: 24px;
+  margin-top: 90px;
+  padding-top: 100px;
+}
+.box .main .about .counttxt .counttxt1,
+.box .main .news .counttxt .counttxt1 {
+  text-indent: 26px;
+}
+.box .main .about .counttxt .counttxt2 a,
+.box .main .news .counttxt .counttxt2 a {
+  text-decoration: none;
+}
+.box .main .team .title {
+  float: right;
+  text-align: right;
+}
+.box .main .team .title > img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.box .main .team .title > p {
+  font-size: 2rem;
+}
+.box .main .team .photos {
+  margin-bottom: 30px;
+  margin-top: 90px;
+}
+.box .main .team .photos .photoxx {
+  padding: 20px;
+}
+.box .main .team .photos .photoxx .frames {
+  border: solid 2px lightgray;
+  position: relative;
+  overflow: hidden;
+}
+.box .main .team .photos .photoxx .frames img {
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+.box .main .team .photos .photoxx .frames .layer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0);
+  z-index: -999;
+  transition: background-color 0.3s linear;
+}
+.box .main .team .photos .photoxx .frames:hover .layer {
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+.box .main .team .photos .photoxx .frames .layer a {
+  color: #FFFFFF;
+  text-align: center;
+  display: inline-block;
+  width: 70px;
+  height: 45px;
+  line-height: 45px;
+  border: solid 2px #FFFFFF;
+  font-size: 1.6rem;
+}
+.box .main .team .counttxt {
+  padding-left: 0px ;
+  padding-right: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.box .main .team .counttxt > div {
+  display: flex;
+  justify-content: center;
+}
+.box .main .team .counttxt .cxbtn {
+  border: solid 1px gray;
+  width: 70px;
+  text-align: center;
+  color: #008FD7;
+  margin-top: 10px;
+}
+.box .main .team .photoszz img {
+  border: solid 3px lightgray;
+}
+.box .main .news .counttxt .maincounts .leftc img {
+  width: 100%;
+}
+.box .main .news .counttxt .maincounts .rightc .panel ul {
+  list-style: none;
+}
+.box .main .news .counttxt .maincounts .rightc .panel ul li {
+  height: 60px;
+  line-height: 60px;
+  border: solid 1px red;
+}
+.box .main .news .counttxt .maincounts .rightc .panel ul li .sp1 span {
+  line-height: 30px;
+  height: 30px;
+  display: inline-block;
+}

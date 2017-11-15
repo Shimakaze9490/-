@@ -1,0 +1,91 @@
+.main .news {
+  background-color: #F8F8FF;
+}
+.main .news .title {
+  padding-left: 10px;
+}
+.main .news .title > img {
+  margin-bottom: 10px;
+  width: auto;
+}
+.main .news .title > p {
+  font-size: 2rem;
+}
+.main .news .tabs .navss ul {
+  height: 40px;
+  list-style: none;
+  margin-left: 10px;
+  width: 650px;
+  border-bottom: solid 1px gray;
+}
+.main .news .tabs .navss ul li {
+  height: 40px;
+  line-height: 40px;
+  float: left;
+  width: 85px;
+  text-align: center;
+  color: #008FD7;
+  border-radius: 3px;
+  transition: all 0.3s linear;
+}
+.main .news .tabs .navss ul li:hover {
+  background-color: #FFFFFF;
+  color: dimgray;
+  height: 40px;
+  cursor: pointer;
+  border: solid 1px gray;
+  border-bottom: transparent;
+}
+.main .news .tabs .navss ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.main .news .tabs .tabcounts .tabs1 .line1 {
+  margin-bottom: 20px;
+}
+.main .news .tabs .tabcounts .tabs1 .line1 .left div .sp1 {
+  text-align: center;
+  background-color: #008FD7;
+  display: inline-block;
+  height: 80px;
+  width: 80px;
+}
+.main .news .tabs .tabcounts .tabs1 .line1 .left div .sp1 span {
+  color: #FFFFFF;
+}
+.main .news .tabs .tabcounts .tabs1 .line1 .left div .sp1 span:nth-child(1) {
+  height: 40px;
+  line-height: 40px;
+  font-size: 1.8rem;
+}
+.main .news .tabs .tabcounts .tabs1 .line1 .left div .sp1 span:nth-child(2) {
+  height: 30px;
+  line-height: 30px;
+  font-size: 1.5rem;
+}
+.main .news .tabs .tabcounts .tabs1 .line1 .left div img {
+  margin-left: 5px;
+}
+.main .news .tabs .tabcounts .tabs1 .line1 .right h3,
+.main .news .tabs .tabcounts .tabs1 .line1 .right .checkz {
+  color: #008FD7;
+}
+.main .news .tabs .tabcounts .tabs1 .line1 .right p {
+  text-indent: 24px;
+  font-size: 1.6rem;
+}
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+  .main .news .title > img {
+    width: 100%;
+  }
+  .main .news .tabs .navss ul {
+    width: 90%;
+  }
+  .main .news .tabs .navss ul li {
+    width: 60px;
+  }
+  .main .news .tabs .tabcounts .tabs1 .line1 .left div img {
+    width: 100%;
+  }
+}

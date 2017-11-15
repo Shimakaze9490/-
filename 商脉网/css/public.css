@@ -1,0 +1,102 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.box {
+  width: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  position: relative;
+}
+.box .rightcountx {
+  width: 100px;
+  height: 180px;
+  position: fixed;
+  background-color: #ffffff;
+  z-index: 9999;
+  top: 400px;
+  right: 0px;
+  cursor: pointer;
+}
+.box .rightcountx .secondcount > img {
+  width: 100%;
+  height: 130px;
+}
+.box .rightcountx .thirdcount {
+  padding-left: 10px;
+}
+.box .top {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  z-index: 1000;
+}
+.box .top .navbar {
+  margin-bottom: 0px;
+  background-color: #ffffff;
+  /*.navbar-default*/
+}
+.box .top .navbar .navbar-brand img {
+  margin-top: -12px;
+}
+.box .banner {
+  padding-left: 0px;
+  padding-right: 0px;
+  position: relative;
+  /*margin-top: 20px;*/
+  z-index: 10;
+}
+.box .banner img {
+  width: 100%;
+  height: auto;
+}
+.box .main {
+  margin-bottom: 20px;
+  padding-left: 0px ;
+  padding-right: 0px;
+}
+.box .main > div {
+  min-height: 300px;
+  margin-top: 50px;
+}
+.box .footer {
+  padding-left: 0px;
+  padding-right: 0px;
+  background-color: #000000;
+  color: gray;
+  font-size: 1rem;
+  min-height: 130px;
+}
+.box .footer .counts div {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.box .footer .counts .row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.box .footer .counts .row .count1 {
+  margin-top: 20px;
+  padding-left: 50px;
+}
+.box .footer .counts .row .count2 {
+  margin-top: 20px;
+}
+.box .footer .counts .row .count2 > div {
+  border-top: solid 1.5px #CCCCCC;
+  padding-top: 10px;
+  width: 70px;
+  margin-left: 70px;
+  float: left;
+}
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+  .box .footer .counts .row .count1 {
+    padding-left: 10px;
+  }
+  .box .footer .counts .row .count2 > div {
+    width: 70px;
+    margin-left: 10px;
+  }
+}

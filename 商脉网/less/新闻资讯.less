@@ -1,0 +1,136 @@
+.main {
+    .news {
+        background-color: #F8F8FF;
+        .title {
+            padding-left: 10px;
+            >img {
+                margin-bottom: 10px;
+                width: auto;
+            }
+            >p {
+                font-size: 2rem;
+            }
+        }
+        .tabs {
+            .navss {
+                ul {
+                    height: 40px;
+                    list-style: none;
+                    margin-left: 10px;
+                    width: 650px;
+                    border-bottom: solid 1px gray;
+                    li {
+                        height: 40px;
+                        line-height: 40px;
+                        float: left;
+                        width: 85px;
+                        text-align: center;
+                        color: #008FD7;
+                        border-radius: 3px;
+                        transition: all 0.3s linear;
+                        &:hover {
+                            background-color: #FFFFFF;
+                            color: dimgray;
+                            height: 40px;
+                            cursor: pointer;
+                            border: solid 1px gray;
+                            border-bottom: transparent;
+                        }
+                    }
+                    &::after {
+                        content: "";
+                        display: block;
+                        clear: both;
+                    }
+                }
+            }
+            //选项卡内容
+            .tabcounts {
+                //第一卡
+                .tabs1 {
+                    //第一行
+                    .line1 {
+                        margin-bottom: 20px;
+                        .left {
+                            div {
+                                .sp1 {
+                                    text-align: center;
+                                    background-color: #008FD7;
+                                    display: inline-block;
+                                    height: 80px;
+                                    width: 80px;
+                                    span {
+                                        color: #FFFFFF;
+                                    }
+                                    span:nth-child(1) {
+                                        height: 40px;
+                                        line-height: 40px;
+                                        font-size: 1.8rem;
+                                    }
+                                    span:nth-child(2) {
+                                        height: 30px;
+                                        line-height: 30px;
+                                        font-size: 1.5rem;
+                                    }
+                                }
+                                img {
+                                    margin-left: 5px;
+                                }
+                            }
+                        }
+                        .right {
+                            h3,
+                            .checkz {
+                                color: #008FD7;
+                            }
+                            p {
+                                text-indent: 24px;
+                                font-size: 1.6rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//媒体查询：
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+    .main {
+        .news {
+            .title {
+                >img {
+                    width: 100%;
+                }
+                >p {
+                }
+            }
+            .tabs {
+                .navss {
+                    ul {
+                        //width: 650px;
+                        width: 90%;
+                        li {
+                            //width: 85px;
+                            width: 60px;
+                        }
+                    }
+                }
+                .tabcounts {
+                    .tabs1 {
+                        .line1 {
+                            .left {
+                                div {
+                                    img {
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
